@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="/css/Contact.css">
+</head>
+<body>
+
+    <div class="upper-site">
+        <div class="title-logo">
+            <img src="/img/Responsive Roger_transparent ohne Slogan.png" alt="Main Page Logo" id="mainPageLogo">
+        </div>
+    </div>
+    <div id="strich"></div>
+    <div class="upper-site">
+        <nav class="navigation">
+            <ul class="navigation-elements">
+
+                <li class="navigation-element">
+                    <a href="../../Pages/MyWork/">Projekte</a>
+                </li>
+                <li class="navigation-element">
+                    <a href="/index.html">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="contact-form-container">
+        <h2>Contact Us</h2>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="formMessage"></p>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Roger Widmer | <a href="/Pages/Impressum/">Impressum</a></p>
+        </div>
+    </footer>
+    <script src="/js/contact.js"></script>
+</body>
+</html>

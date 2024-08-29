@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #a5a08f;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameCanvas {
+    border: 2px solid #fff;
+    background-color: #000;
+}
+
+.upper-site{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.navigation-elements{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+.navigation-element{
+    padding-right: 5px;
+    list-style-type: none;   
+    color: #fbfaeb;
+    text-decoration: none;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+.navigation-element :hover{
+    cursor: pointer;
+}
+
+#strich{
+    width: 100%;
+    height: 2px;
+    background-color: #fbfaeb;
+}
+
+#mainPageLogo{
+    max-height: 80px;
+    transition: all, 0.3s;
+}
+
+
+#mainPageLogo:hover{
+    max-height: 120px;
+}
